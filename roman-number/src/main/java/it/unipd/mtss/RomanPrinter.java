@@ -1,0 +1,16 @@
+////////////////////////////////////////////////////////////////////
+// ALESSANDRO ADAMI 2076065
+// ALBERTO JOSÉ TONIOLO 2066745
+////////////////////////////////////////////////////////////////////
+
+package it.unipd.mtss;
+
+public class RomanPrinter {
+    public static String print(int num){
+        return printAsciiArt(IntegerToRoman.convert(num));
+    }
+    private static String printAsciiArt(String romanNumber){
+        //TODO
+        return null;
+    }
+}
