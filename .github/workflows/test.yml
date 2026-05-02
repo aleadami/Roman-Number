@@ -27,11 +27,6 @@ jobs:
           cache: maven
 
       - name: Build, test and coverage
-        run: |
-          mvn clean verify
-          echo "--- CONTROLLO POSIZIONE REPORT ---"
-          find . -name "jacoco.xml"
-          echo "--- FINE CONTROLLO ---"
-          mvn coveralls:report
+        run: mvn -B clean verify coveralls:report
         env:
-          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+        COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
