@@ -5,7 +5,6 @@
 // ALBERTO JOSÉ TONIOLO 2066745
 ////////////////////////////////////////////////////////////////////
 
-Descrizione:
 Il progetto implementa un convertitore dei primi 3 numeri interi da arabi a romani, stampandoli poi in asciart
 
 ![Build Status](https://github.com/aleadami/Roman-Number/actions/workflows/test.yml/badge.svg)
