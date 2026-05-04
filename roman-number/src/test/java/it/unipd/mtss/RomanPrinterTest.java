@@ -6,13 +6,59 @@
 package it.unipd.mtss;
 
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class RomanPrinterTest {
+
     @Test
-    void smokeTest() {
-        // Metodo vuoto: non testa nulla ma fa generare i report
-        assertEquals("  _____ \n |_   _|\n   | |  \n   | |  \n  _| |_ \n |_____|\n", RomanPrinter.print(1));
-        assertEquals("  _____   _____ \n |_   _| |_   _|\n   | |     | |  \n   | |     | |  \n  _| |_   _| |_ \n |_____| |_____|\n", RomanPrinter.print(2));
-        assertEquals("  _____   _____   _____ \n |_   _| |_   _| |_   _|\n   | |     | |     | |  \n   | |     | |     | |  \n  _| |_   _| |_   _| |_ \n |_____| |_____| |_____|\n", RomanPrinter.print(3));
+    void testPrintNumberOne() {
+        String expected = 
+            "  _____ \n" +
+            " |_   _|\n" +
+            "   | |  \n" +
+            "   | |  \n" +
+            "  _| |_ \n" +
+            " |_____|\n";
+
+        assertEquals(expected, RomanPrinter.print(1));
+    }
+
+    @Test
+    void testPrintNumberTwo() {
+        String expected = 
+            "  _____   _____ \n" +
+            " |_   _| |_   _|\n" +
+            "   | |     | |  \n" +
+            "   | |     | |  \n" +
+            "  _| |_   _| |_ \n" +
+            " |_____| |_____|\n";
+
+        assertEquals(expected, RomanPrinter.print(2));
+    }
+
+    @Test
+    void testPrintNumberThree() {
+        String expected = 
+            "  _____   _____   _____ \n" +
+            " |_   _| |_   _| |_   _|\n" +
+            "   | |     | |     | |  \n" +
+            "   | |     | |     | |  \n" +
+            "  _| |_   _| |_   _| |_ \n" +
+            " |_____| |_____| |_____|\n";
+
+        assertEquals(expected, RomanPrinter.print(3));
+    }
+
+    @Test
+    void testPrintThrowsExceptionForInvalidNumbers() {
+        // Verifica che l'eccezione "buchi" fino al Printer
+        assertThrows(IllegalArgumentException.class, () -> {
+            RomanPrinter.print(0);
+        });
+
+        assertThrows(IllegalArgumentException.class, () -> {
+            RomanPrinter.print(4);
+        });
     }
 }
