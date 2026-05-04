@@ -1,5 +1,5 @@
 # Ignora la cartella dei risultati di Maven
-/target/
+target/
 
 #Ignora i log di errore
 *.log
