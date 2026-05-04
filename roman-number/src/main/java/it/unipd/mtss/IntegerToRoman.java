@@ -7,6 +7,9 @@ package it.unipd.mtss;
 
 public class IntegerToRoman {
 
+    //Nasconde il costruttore pubblico di default
+    private IntegerToRoman() { }
+
     public static String convert(int number){
 
         if (number < 1 || number > 3) {
