@@ -1,5 +1,5 @@
 # Ignora la cartella dei risultati di Maven
-/target/
+target/
 
 #Ignora i log di errore
 *.log
@@ -8,3 +8,5 @@
 .DS_Store
 **/.DS_Store
 
+#Ignora le configurazioni locali dell'IDE
+.idea/

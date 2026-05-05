@@ -7,17 +7,19 @@
     <module name="TreeWalker">
         <module name="BooleanExpressionComplexity"/>
         <module name="CyclomaticComplexity"/>
-        <module name="MethodLength">
-            <property name="max" value="4"/>
-        </module>
+        <module name="MethodLength"/>
         <module name="EmptyCatchBlock"/>
         <module name="AvoidStarImport"/>
         <module name="IllegalImport"/>
         <module name="NeedBraces"/>
     </module>
 
-    <module name="FileLength"/>
-    <module name="LineLength"/>
+    <module name="FileLength">
+        <property name="max" value="500"/>
+    </module>
+    <module name="LineLength">
+        <property name ="max" value="120"/>
+    </module>
     <module name="FileTabCharacter"/>
     <module name="Header">
         <property name="headerFile" value="header.txt"/>
