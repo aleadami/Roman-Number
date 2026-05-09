@@ -13,6 +13,7 @@ class RomanPrinterTest {
 
     @Test
     void testPrintNumberOne() {
+        // Verifica che la stampa del numero 1 sia corretta
         String expected = 
             "  _____ \n" +
             " |_   _|\n" +
@@ -26,6 +27,7 @@ class RomanPrinterTest {
 
     @Test
     void testPrintNumberTwo() {
+        // Verifica che la stampa del numero 2 sia corretta
         String expected = 
             "  _____   _____ \n" +
             " |_   _| |_   _|\n" +
@@ -39,6 +41,7 @@ class RomanPrinterTest {
 
     @Test
     void testPrintNumberThree() {
+        // Verifica che la stampa del numero 3 sia corretta
         String expected = 
             "  _____   _____   _____ \n" +
             " |_   _| |_   _| |_   _|\n" +
@@ -52,7 +55,7 @@ class RomanPrinterTest {
 
     @Test
     void testPrintThrowsExceptionForInvalidNumbers() {
-        // Verifica che l'eccezione "buchi" fino al Printer
+        // Verifica che l'eccezione funzioni anche per Printer
         assertThrows(IllegalArgumentException.class, () -> {
             RomanPrinter.print(0);
         });
