@@ -53,22 +53,6 @@ class RomanPrinterTest {
         assertEquals(expected, RomanPrinter.print(3));
     }
     
- __   __  _      
- \ \ / / | |     
-  \ V /  | |     
-   > <   | |     
-  / . \  | |____ 
- /_/ \_\ |______| 
-
- __   __   _____   _____  __   __
- \ \ / /  / ____| |_   _| \ \ / /
-  \ V /  | |        | |    \ V / 
-   > <   | |        | |     > <  
-  / . \  | |____   _| |_   / . \ 
- /_/ \_\  \_____| |_____| /_/ \_\
-
-
-
     @Test
     void testPrintNumberFour() {
         String expected = 
