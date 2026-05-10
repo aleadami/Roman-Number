@@ -56,12 +56,12 @@ class RomanPrinterTest {
     @Test
     void testPrintNumberFour() {
         String expected = 
-            "  _____  __      __" +
-            " |_   _| \\ \\    / /" +
-            "   | |    \\ \\  / / " +
-            "   | |     \\ \\/ /  " +
-            "  _| |_     \\  /   " +
-            " |_____|     \\/    ";
+            "  _____  __      __\n" +
+            " |_   _| \\ \\    / /\n" +
+            "   | |    \\ \\  / / \n" +
+            "   | |     \\ \\/ /  \n" +
+            "  _| |_     \\  /   \n" +
+            " |_____|     \\/    \n";
 
         assertEquals(expected, RomanPrinter.print(4));
     }
@@ -125,7 +125,7 @@ class RomanPrinterTest {
             "  \\ V /  | |        | |    \\ V / \n" +
             "   > <   | |        | |     > <  \n" +
             "  / . \\  | |____   _| |_   / . \\ \n" +
-            " /_/ \\_\\ \\ \\_____| |_____| /_/ \\_\\\n";
+            " /_/ \\_\\  \\_____| |_____| /_/ \\_\\\n";
         assertEquals(expected, RomanPrinter.print(99));
     }
 
