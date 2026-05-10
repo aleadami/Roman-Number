@@ -53,39 +53,58 @@ class RomanPrinterTest {
         assertEquals(expected, RomanPrinter.print(3));
     }
     
+ __   __  _      
+ \ \ / / | |     
+  \ V /  | |     
+   > <   | |     
+  / . \  | |____ 
+ /_/ \_\ |______| 
+
+ __   __   _____   _____  __   __
+ \ \ / /  / ____| |_   _| \ \ / /
+  \ V /  | |        | |    \ V / 
+   > <   | |        | |     > <  
+  / . \  | |____   _| |_   / . \ 
+ /_/ \_\  \_____| |_____| /_/ \_\
+
+
+
     @Test
     void testPrintNumberFour() {
         String expected = 
-            "  _____  __      __ \n" +
-            " |_   _| \\ \\    / / \n" +
-            "   | |    \\ \\  / /  \n" +
-            "   | |     \\ \\/ /   \n" +
-            "  _| |_     \\  /    \n" +
-            " |_____|     \\/     \n";
+            "  _____  __      __" +
+            " |_   _| \\ \\    / /" +
+            "   | |    \\ \\  / / " +
+            "   | |     \\ \\/ /  " +
+            "  _| |_     \\  /   " +
+            " |_____|     \\/    ";
+
         assertEquals(expected, RomanPrinter.print(4));
     }
 
     @Test
     void testPrintNumberTen() {
         String expected = 
-            " __   __ \n" +
-            " \\ \\ / / \n" +
-            "  \\ V /  \n" +
-            "   > <   \n" +
-            "  / . \\  \n" +
-            " /_/ \\_\\ \n";
+            " __   __\n" +
+            " \\ \\ / /\n" +
+            "  \\ V / \n" +
+            "   > <  \n" +
+            "  / . \\ \n" +
+            " /_/ \\_\\\n";
+
         assertEquals(expected, RomanPrinter.print(10));
     }
 
     @Test
     void testPrintNumberForty() {
         String expected = 
-            " __   __   _      \n" +
-            " \\ \\ / /  | |     \n" +
-            "  \\ V /   | |     \n" +
-            "   > <    | |     \n" +
-            "  / . \\   | |____ \n" +
-            " /_/ \\_\\  |______|\n";
+            " __   __  _      \n" +
+            " \\ \\ / / | |     \n" +
+            "  \\ V /  | |     \n" +
+            "   > <   | |     \n" +
+            "  / . \\  | |____ \n" +
+            " /_/ \\_\\ |______|\n";
+
         assertEquals(expected, RomanPrinter.print(40));
     }
 
@@ -110,32 +129,32 @@ class RomanPrinterTest {
             "   > <   | |     \n" +
             "  / . \\  | |____ \n" +
             " /_/ \\_\\  \\_____|\n";
+;
         assertEquals(expected, RomanPrinter.print(90));
     }
 
     @Test
     void testPrintNumberNinetyNine() {
         String expected = 
-            " __   __   _____   _____   __   __ \n" +
-            " \\ \\ / /  / ____| |_   _| \\ \\ / / \n" +
-            "  \\ V /  | |        | |    \\ V /  \n" +
-            "   > <   | |        | |     > <   \n" +
-            "  / . \\  | |____   _| |_   / . \\  \n" +
-            " /_/ \\_\\  \\_____| |_____| /_/ \\_\\ \n";
+            " __   __   _____   _____  __   __\n" +
+            " \\ \\ / /  / ____| |_   _| \\ \\ / /\n" +
+            "  \\ V /  | |        | |    \\ V / \n" +
+            "   > <   | |        | |     > <  \n" +
+            "  / . \\  | |____   _| |_   / . \\ \n" +
+            " /_/ \\_\ \\ \\_____| |_____| /_/ \\_\\\n";
         assertEquals(expected, RomanPrinter.print(99));
     }
 
     @Test
     void testPrintNumberHundred() {
         String expected = 
-            "   _____ \n" +
+            "   _____ \n"
             "  / ____|\n" +
             " | |     \n" +
             " | |     \n" +
-            " | |     \n" +
+            " | |____ \n" +
             "  \\_____|\n";
-        // Nota: se la riga 5 della tua 'C' è " | |____ ", aggiungila qui sotto
-        // altrimenti la riga 5 rimarrà " | |     "
+
         assertEquals(expected, RomanPrinter.print(100));
     }
 
@@ -235,7 +254,7 @@ class RomanPrinterTest {
             "  \\_____|\n";
 
         assertEquals(expected, RomanPrinter.print(100));
-    }
+    }*/
 
     @Test
     void testPrintThrowsExceptionForInvalidNumbers() {
@@ -247,5 +266,5 @@ class RomanPrinterTest {
         assertThrows(IllegalArgumentException.class, () -> {
             RomanPrinter.print(101);
         });
-    }*/
+    }
 }
