@@ -87,7 +87,7 @@ class RomanPrinterTest {
         String expected = 
             " __   __   _      \n" +
             " \\ \\ / /  | |     \n" +
-            "  \ V /   | |     \n" +
+            "  \\ V /   | |     \n" +
             "   > <    | |     \n" +
             "  / . \\   | |____ \n" +
             " /_/ \\_\\  |______|\n";
@@ -128,11 +128,11 @@ class RomanPrinterTest {
         // Verifica che la stampa del numero 99 sia corretta
         String expected = 
             " __   __   _____   _____  __   __ \n" +
-            " \\ \ / /  / ____| |_   _| \\ \ / / \n" +
+            " \\ \\ / /  / ____| |_   _| \\ \\ / / \n" +
             "  \\ V /  | |        | |    \\ V /  \n" +
             "   > <   | |        | |     > <   \n" +
             "  / . \\  | |____   _| |_   / . \\  \n" +
-            " /_/ \\_\\  \_____| |_____| /_/ \\_\\ \n";
+            " /_/ \\_\\  \\_____| |_____| /_/ \\_\\ \n";
 
         assertEquals(expected, RomanPrinter.print(99));
     }
