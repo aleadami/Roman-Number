@@ -125,7 +125,7 @@ class RomanPrinterTest {
             "  \\ V /  | |        | |    \\ V / \n" +
             "   > <   | |        | |     > <  \n" +
             "  / . \\  | |____   _| |_   / . \\ \n" +
-            " /_/ \\_\ \\ \\_____| |_____| /_/ \\_\\\n";
+            " /_/ \\_\\ \\ \\_____| |_____| /_/ \\_\\\n";
         assertEquals(expected, RomanPrinter.print(99));
     }
 
