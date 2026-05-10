@@ -19,41 +19,59 @@ public class RomanPrinter {
     
         // Metodo che definisce la asciart orizzontalmente stampando per righe
         String[][] asciiLetters = {
-            {
-                //Riga1
-                "  _____ " // I
+            {//Riga1
+                "   _____ ",      // C
+                "  _      ",      // L
+                " __   __",       // X
+                " __      __",    // V
+                "  _____ "        // I
             },
 
-            {
-                //Riga2
-                " |_   _|" // I
+            {//Riga2
+                "  / ____|",      // C
+                " | |     ",      // L
+                " \\ \\ / /",     // X
+                " \\ \\    / /",  // V
+                " |_   _|"        // I
             },
 
-            {
-                //Riga3
-                "   | |  " // I
+            {//Riga3
+                " | |     ",      // C
+                " | |     ",      // L
+                "  \\ V / ",      // X
+                "  \\ \\  / / ",  // V
+                "   | |  "        // I
             },
 
-            {
-                //Riga4
-                "   | |  " // I
+            {//Riga4
+                " | |     ",      // C
+                " | |     ",      // L
+                "   > <  ",       // X
+                "   \\ \\/ /  ",  // V
+                "   | |  "        // I
             },
                 
-            {
-                //Riga5
-                "  _| |_ " // I
+            {//Riga5
+                " | |____ ",      // C
+                " | |____ ",      // L
+                "  / . \\ ",      // X
+                "    \\  /   ",   // V
+                "  _| |_ "        // I
             },
                 
-            {
-                //Riga6
-                " |_____|" // I
+            {//Riga6
+                "  \\_____|",     // C
+                " |______|",      // L
+                " /_/ \\_\\",     // X
+                "     \\/    ",   // V
+                " |_____|"        // I
             },
         };
         
         for( int z=0; z<6; z++) {
             for (char c : romanNumber.toCharArray()) {
                 // Aggiungi la rappresentazione ASCII art orizzontale della lettera corrente
-                asciiArt.append(asciiLetters[z]["I".indexOf(c)]);
+                asciiArt.append(asciiLetters[z]["CLXVI".indexOf(c)]);
             }
             asciiArt.append("\n");
         }

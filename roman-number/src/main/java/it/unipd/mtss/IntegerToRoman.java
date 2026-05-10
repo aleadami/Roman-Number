@@ -12,13 +12,13 @@ public class IntegerToRoman {
 
     public static String convert(int number){
 
-        if (number < 1 || number > 3) {
-            throw new IllegalArgumentException("Il numero deve essere compreso tra 1 e 3");
+        if (number < 1 || number > 100) {
+            throw new IllegalArgumentException("Il numero deve essere compreso tra 1 e 100");
         }
 
         // Definizione delle lettere romane e dei loro valori corrispondenti
-        String[] romanLetters = {"I"};
-        int[] values = {1};
+        String[] romanLetters = {"C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        int[] values = {100, 90, 50, 40, 10, 9, 5, 4, 1};
 
         StringBuilder romanNumber = new StringBuilder();
 

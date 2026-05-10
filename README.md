@@ -17,3 +17,7 @@ Il programma soddisfa i requisiti descritti a [questo indirizzo](https://it.wiki
 ## Versione 1.0
 
 Disponibile la conversione e stampa dei primi 3 numeri interi 
+
+## Versione 2.0
+
+Disponibile la conversione e stampa dei primi 100 numeri interi
