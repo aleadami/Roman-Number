@@ -55,6 +55,7 @@ class RomanPrinterTest {
     
     @Test
     void testPrintNumberFour() {
+        // Verifica che la stampa del numero 4 sia corretta
         String expected = 
             "  _____  __      __\n" +
             " |_   _| \\ \\    / /\n" +
@@ -69,6 +70,7 @@ class RomanPrinterTest {
     @Test
     void testPrintNumberTen() {
         String expected = 
+            // Verifica che la stampa del numero 10 sia corretta
             " __   __\n" +
             " \\ \\ / /\n" +
             "  \\ V / \n" +
@@ -82,6 +84,7 @@ class RomanPrinterTest {
     @Test
     void testPrintNumberForty() {
         String expected = 
+            // Verifica che la stampa del numero 40 sia corretta
             " __   __  _      \n" +
             " \\ \\ / / | |     \n" +
             "  \\ V /  | |     \n" +
@@ -95,6 +98,7 @@ class RomanPrinterTest {
     @Test
     void testPrintNumberFifty() {
         String expected = 
+            // Verifica che la stampa del numero 50 sia corretta
             "  _      \n" +
             " | |     \n" +
             " | |     \n" +
@@ -107,6 +111,7 @@ class RomanPrinterTest {
     @Test
     void testPrintNumberNinety() {
         String expected = 
+            // Verifica che la stampa del numero 90 sia corretta
             " __   __   _____ \n" +
             " \\ \\ / /  / ____|\n" +
             "  \\ V /  | |     \n" +
@@ -119,6 +124,7 @@ class RomanPrinterTest {
 
     @Test
     void testPrintNumberNinetyNine() {
+        // Verifica che la stampa del numero 99 sia corretta
         String expected = 
             " __   __   _____   _____  __   __\n" +
             " \\ \\ / /  / ____| |_   _| \\ \\ / /\n" +
@@ -132,6 +138,7 @@ class RomanPrinterTest {
     @Test
     void testPrintNumberHundred() {
         String expected = 
+            // Verifica che la stampa del numero 100 sia corretta
             "   _____ \n" +
             "  / ____|\n" +
             " | |     \n" +
