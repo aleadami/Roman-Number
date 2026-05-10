@@ -12,6 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class IntegerToRomanTest {
     @Test
     public void testConvert_ValidNumbers() {
+        // Verifica il corretto funzionamento della conversione per i numeri validi
         assertEquals("I", IntegerToRoman.convert(1));
         assertEquals("II", IntegerToRoman.convert(2));
         assertEquals("III", IntegerToRoman.convert(3));
