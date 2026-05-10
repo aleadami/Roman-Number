@@ -54,49 +54,49 @@ class RomanPrinterTest {
     }
     
     @Test
-    void testPrintNumberThree() {
+    void testPrintNumberFour() {
         // Verifica che la stampa del numero 4 sia corretta
         String expected = 
             "  _____  __      __ \n" +
-            " |_   _| \ \    / / \n" +
-            "   | |    \ \  / /  \n" +
-            "   | |     \ \/ /   \n" +
-            "  _| |_     \  /    \n" +
-            " |_____|     \/     \n";
+            " |_   _| \\ \\    / / \n" +
+            "   | |    \\ \\  / /  \n" +
+            "   | |     \\ \\/ /   \n" +
+            "  _| |_     \\  /    \n" +
+            " |_____|     \\/     \n";
 
         assertEquals(expected, RomanPrinter.print(4));
     }
 
     @Test
-    void testPrintNumberThree() {
+    void testPrintNumberTen() {
         // Verifica che la stampa del numero 10 sia corretta
         String expected = 
             " __   __ \n" +
-            " \ \ / / \n" +
-            "  \ V /  \n" +
+            " \\ \\ / / \n" +
+            "  \\ V /  \n" +
             "   > <   \n" +
-            "  / . \  \n" +
-            " /_/ \_\ \n";
+            "  / . \\  \n" +
+            " /_/ \\_\\ \n";
 
         assertEquals(expected, RomanPrinter.print(10));
     }
 
     @Test
-    void testPrintNumberThree() {
+    void testPrintNumberFourty() {
         // Verifica che la stampa del numero 40 sia corretta
         String expected = 
             " __   __   _      \n" +
-            " \ \ / /  | |     \n" +
+            " \\ \\ / /  | |     \n" +
             "  \ V /   | |     \n" +
             "   > <    | |     \n" +
-            "  / . \   | |____ \n" +
-            " /_/ \_\  |______|\n";
+            "  / . \\   | |____ \n" +
+            " /_/ \\_\\  |______|\n";
 
         assertEquals(expected, RomanPrinter.print(40));
     }
 
     @Test
-    void testPrintNumberThree() {
+    void testPrintNumberFifthy() {
         // Verifica che la stampa del numero 50 sia corretta
         String expected = 
             " _      \n" +
@@ -110,35 +110,35 @@ class RomanPrinterTest {
     }
 
     @Test
-    void testPrintNumberThree() {
+    void testPrintNumberNinety() {
         // Verifica che la stampa del numero 90 sia corretta
         String expected = 
             " __   __   _____  \n" +
-            " \ \ / /  / ____| \n" +
-            "  \ V /  | |      \n" +
+            " \\ \\ / /  / ____| \n" +
+            "  \\ V /  | |      \n" +
             "   > <   | |      \n" +
-            "  / . \  | |____  \n" +
-            " /_/ \_\  \_____| \n";
+            "  / . \\  | |____  \n" +
+            " /_/ \\_\\  \\_____| \n";
 
         assertEquals(expected, RomanPrinter.print(90));
     }
 
     @Test
-    void testPrintNumberThree() {
+    void testPrintNumberNintynine() {
         // Verifica che la stampa del numero 99 sia corretta
         String expected = 
             " __   __   _____   _____  __   __ \n" +
-            " \ \ / /  / ____| |_   _| \ \ / / \n" +
-            "  \ V /  | |        | |    \ V /  \n" +
+            " \\ \ / /  / ____| |_   _| \\ \ / / \n" +
+            "  \\ V /  | |        | |    \\ V /  \n" +
             "   > <   | |        | |     > <   \n" +
-            "  / . \  | |____   _| |_   / . \  \n" +
-            " /_/ \_\  \_____| |_____| /_/ \_\ \n";
+            "  / . \\  | |____   _| |_   / . \\  \n" +
+            " /_/ \\_\\  \_____| |_____| /_/ \\_\\ \n";
 
         assertEquals(expected, RomanPrinter.print(99));
     }
 
     @Test
-    void testPrintNumberThree() {
+    void testPrintNumberHundred() {
         // Verifica che la stampa del numero 100 sia corretta
         String expected = 
             "   _____ \n" +
@@ -147,7 +147,7 @@ class RomanPrinterTest {
             " | |     \n" +
             " | |     \n" +
             " | |____ \n" +
-            "  \_____|\n";
+            "  \\_____|\n";
 
         assertEquals(expected, RomanPrinter.print(100));
     }
