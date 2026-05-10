@@ -132,7 +132,7 @@ class RomanPrinterTest {
     @Test
     void testPrintNumberHundred() {
         String expected = 
-            "   _____ \n"
+            "   _____ \n" +
             "  / ____|\n" +
             " | |     \n" +
             " | |     \n" +
