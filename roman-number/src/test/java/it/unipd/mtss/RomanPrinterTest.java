@@ -153,12 +153,12 @@ class RomanPrinterTest {
     void testPrintNumberTwoHundred() {
         String expected = 
             // Verifica che la stampa del numero 400 sia corretta
-            "   _____ \n" +
-            "  / ____|\n" +
-            " | |     \n" +
-            " | |     \n" +
-            " | |____ \n" +
-            "  \\_____|\n";
+            "   _____   _____  \n" +
+            "  / ____| |  __ \\ \n" +
+            " | |      | |  | |\n" +
+            " | |      | |  | |\n" +
+            " | |____  | |__| |\n" +
+            "  \\_____| |_____/ \n";
 
         assertEquals(expected, RomanPrinter.print(400));
     }
