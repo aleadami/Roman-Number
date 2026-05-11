@@ -150,7 +150,7 @@ class RomanPrinterTest {
     }
 
     @Test
-    void testPrintNumberTwoHundred() {
+    void testPrintNumberFourHundred() {
         String expected = 
             // Verifica che la stampa del numero 400 sia corretta
             "   _____   _____  \n" +
