@@ -17,7 +17,7 @@ public class IntegerToRomanTest {
         assertEquals("II", IntegerToRoman.convert(2));
         assertEquals("III", IntegerToRoman.convert(3));
 
-        // Verifica le eccezioni sottrattive e i nuovi simboli (V, X, L, C)
+        // Verifica le eccezioni sottrattive e i simboli precedenti (V, X, L, C)
         assertEquals("IV", IntegerToRoman.convert(4));
         assertEquals("V", IntegerToRoman.convert(5));
         assertEquals("IX", IntegerToRoman.convert(9));
@@ -27,12 +27,19 @@ public class IntegerToRomanTest {
         assertEquals("XIV", IntegerToRoman.convert(14));
         assertEquals("XXXIX", IntegerToRoman.convert(39));
 
-        // Verifica i casi limite superiori
+        // Verifica i casi limite superiori precedenti (fino a 100)
         assertEquals("XL", IntegerToRoman.convert(40));
         assertEquals("L", IntegerToRoman.convert(50));
         assertEquals("XC", IntegerToRoman.convert(90));
         assertEquals("XCIX", IntegerToRoman.convert(99));
         assertEquals("C", IntegerToRoman.convert(100));
+
+        // Verifica casi limite fino a 1000 (400, 500, 900, 999, 1000)
+        assertEquals("CD", IntegerToRoman.convert(400));
+        assertEquals("D", IntegerToRoman.convert(500));
+        assertEquals("CM", IntegerToRoman.convert(900));
+        assertEquals("CMXCIX", IntegerToRoman.convert(999));
+        assertEquals("M", IntegerToRoman.convert(1000));
 
     }
 
@@ -46,9 +53,9 @@ public class IntegerToRomanTest {
 
     @Test
     public void testConvert_OverLimit() {
-        // Verifica che numeri > 100 lancino l'eccezione
+        // Verifica che numeri > 1000 lancino l'eccezione
         assertThrows(IllegalArgumentException.class, () -> {
-            IntegerToRoman.convert(101);
+            IntegerToRoman.convert(1001);
         });
     }
 }
