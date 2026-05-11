@@ -21,3 +21,7 @@ Disponibile la conversione e stampa dei primi 3 numeri interi
 ## Versione 2.0
 
 Disponibile la conversione e stampa dei primi 100 numeri interi
+
+## Versione 3.0
+
+Disponibile la conversione e stampa dei primi 1000 numeri interi
