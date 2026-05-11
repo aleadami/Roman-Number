@@ -150,6 +150,76 @@ class RomanPrinterTest {
     }
 
     @Test
+    void testPrintNumberTwoHundred() {
+        String expected = 
+            // Verifica che la stampa del numero 400 sia corretta
+            "   _____ \n" +
+            "  / ____|\n" +
+            " | |     \n" +
+            " | |     \n" +
+            " | |____ \n" +
+            "  \\_____|\n";
+
+        assertEquals(expected, RomanPrinter.print(400));
+    }
+
+    @Test
+    void testPrintNumberFiveHundred() {
+        String expected = 
+            // Verifica che la stampa del numero 500 sia corretta
+            "  _____  \n" +
+            " |  __ \\ \n" +
+            " | |  | |\n" +
+            " | |  | |\n" +
+            " | |__| |\n" +
+            " |_____/ \n";
+
+        assertEquals(expected, RomanPrinter.print(500));
+    }
+
+    @Test
+    void testPrintNumberNineHundred() {
+        String expected = 
+            // Verifica che la stampa del numero 900 sia corretta
+            "   _____   __  __ \n" +
+            "  / ____| |  \\/  |\n" +
+            " | |      | \\  / |\n" +
+            " | |      | |\\/| |\n" +
+            " | |____  | |  | |\n" +
+            "  \\_____| |_|  |_|\n";
+
+        assertEquals(expected, RomanPrinter.print(900));
+    }
+
+    @Test
+    void testPrintNumberNineHundredNinetyNine() {
+        String expected = 
+            // Verifica che la stampa del numero 999 sia corretta
+            "   _____   __  __  __   __   _____   _____  __   __\n" +
+            "  / ____| |  \\/  | \\ \\ / /  / ____| |_   _| \\ \\ / /\n" +
+            " | |      | \\  / |  \\ V /  | |        | |    \\ V / \n" +
+            " | |      | |\\/| |   > <   | |        | |     > <  \n" +
+            " | |____  | |  | |  / . \\  | |____   _| |_   / . \\ \n" +
+            "  \\_____| |_|  |_| /_/ \\_\\  \\_____| |_____| /_/ \\_\\\n";
+
+        assertEquals(expected, RomanPrinter.print(999));
+    }
+
+    @Test
+    void testPrintNumberThousand() {
+        String expected = 
+            // Verifica che la stampa del numero 1000 sia corretta
+            "  __  __ \n" +
+            " |  \\/  |\n" +
+            " | \\  / |\n" +
+            " | |\\/| |\n" +
+            " | |  | |\n" +
+            " |_|  |_|\n";
+
+        assertEquals(expected, RomanPrinter.print(1000));
+    }
+
+    @Test
     void testPrintThrowsExceptionForInvalidNumbers() {
         // Verifica che l'eccezione funzioni anche per Printer
         assertThrows(IllegalArgumentException.class, () -> {
@@ -157,7 +227,7 @@ class RomanPrinterTest {
         });
 
         assertThrows(IllegalArgumentException.class, () -> {
-            RomanPrinter.print(101);
+            RomanPrinter.print(1001);
         });
     }
 }
